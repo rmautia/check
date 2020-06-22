@@ -14,6 +14,7 @@ import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
+import { ResetComponent } from './reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AlertComponent } from './_components';
     LoginComponent,
     RegisterComponent,
     AlertComponent,
+    ResetComponent,
   ],
   imports: [
     BrowserModule,
