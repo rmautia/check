@@ -5,6 +5,8 @@ import { map } from 'rxjs/operators';
 
 import { environment } from '../../environments/environment';
 
+const BASEURL = 'https://forio.com/app/acme-simulations/supply-chain-game';
+
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
     private currentUserSubject: BehaviorSubject<any>;
@@ -34,4 +36,17 @@ export class AuthenticationService {
         localStorage.removeItem('currentUser');
         this.currentUserSubject.next(null);
     }
+    requestReset(password): Observable<any> {
+        return this.http.post(`${BASEURL}/req-reset-password`, password);
+      
+    }
+    newPassword(body): Observable<any> {
+        return this.http.post(`${BASEURL}/new-password`,body);
+    }
+
+    ValidPasswordToken(body): Observable<any> {
+    return this.http.post(`${BASEURL}/valid-password-token`, body);
+    }
+
+
 }

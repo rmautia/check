@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResetComponent } from './reset.component';
+import { ResponseresetComponent } from './responsereset.component';
 
-describe('ResetComponent', () => {
-  let component: ResetComponent;
-  let fixture: ComponentFixture<ResetComponent>;
+describe('ResponseresetComponent', () => {
+  let component: ResponseresetComponent;
+  let fixture: ComponentFixture<ResponseresetComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResetComponent ]
+      declarations: [ ResponseresetComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResetComponent);
+    fixture = TestBed.createComponent(ResponseresetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

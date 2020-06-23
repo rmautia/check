@@ -14,7 +14,8 @@ import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
-import { ResetComponent } from './reset/reset.component';
+import { RequestresetComponent } from './requestreset/requestreset.component';
+import { ResponseresetComponent } from './responsereset/responsereset.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ResetComponent } from './reset/reset.component';
     LoginComponent,
     RegisterComponent,
     AlertComponent,
-    ResetComponent,
+    RequestresetComponent,
+    ResponseresetComponent,
   ],
   imports: [
     BrowserModule,

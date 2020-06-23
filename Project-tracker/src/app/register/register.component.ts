@@ -10,6 +10,8 @@ export class RegisterComponent implements OnInit {
     registerForm: FormGroup;
     loading = false;
     submitted = false;
+    forbiddenEmails: any;
+    errorMessage: string;
 
     constructor(
         private formBuilder: FormBuilder,
